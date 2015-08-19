@@ -21,7 +21,7 @@ public class DiagramTest extends ProcessEngineTest{
 	private TaskService taskService;
 	
 	@Test
-	@Deployment(resources = {"org/activiti/test/ReceiveTaskTest.testWaitStateBehavior.bpmn"})
+//	@Deployment(resources = {"org/activiti/test/ReceiveTaskTest.testWaitStateBehavior.bpmn"})
 	public void testDiagram() {
 		ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("receiveTask");
 		assertNotNull(processInstance);

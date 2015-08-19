@@ -26,7 +26,7 @@ import org.springframework.transaction.annotation.Transactional;
 	"classpath*:Spring/Spring_*.xml"
 	})
 
-@TransactionConfiguration(transactionManager="transactionManager", defaultRollback=true)
+@TransactionConfiguration(transactionManager="transactionManager", defaultRollback=false)
 @Transactional
 public class ProcessEngineTest{
 
